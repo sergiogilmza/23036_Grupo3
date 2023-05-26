@@ -42,10 +42,10 @@ product.addEventListener('click', e => {
     if (product.children[1].classList.contains('arrow-right')) secondList.style.display = 'flex'
     else secondList.style.display = 'none'
 })
-const map = L.map('map').setView([51.505, -0.09], 13);
+const map = L.map('map').setView([-33.07631979414821, -68.48270780489311], 13);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
-L.marker([-33.07618541584932, -68.48263389481502]).addTo(map).bindPopup('SDG').openPopup();
+L.marker([-33.07631979414821, -68.48270780489311]).addTo(map).bindPopup('SDG').openPopup();
