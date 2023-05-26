@@ -545,6 +545,20 @@ iframe {
     width: 100%;
 }
 
+.footer__links .list {
+    flex-direction: column;
+}
+
+.footer__logo {
+    display: block;
+}
+
+.footer__links__wrapper {
+    display: grid;
+    border: 1px solid white;
+    width: 100%;
+}
+
 @media screen and (max-width: 1536px) {
     .app__header__nav div {
         display: none;
@@ -838,7 +852,7 @@ iframe {
     }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 500px) {
     .title {
         font-family: var(--rubik-bold);
         margin-top: 1em;
@@ -1060,4 +1074,5 @@ iframe {
         justify-content: space-between;
         align-items: center;
     }
+    .app__footer__links {}
 }
