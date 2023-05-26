@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/css/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+<body>
+ <div class="app">
+  <header class="app__header">
+    <img class='logo'src="./assets/imgs/logo.svg" alt="logo">
+      <nav class="app__header__nav" id="nav">
+        <ul class="list list--full">
+          <li class="list__item list__item--click" id="product">
+            <a href="#">Producto</a>
+            <img class="icon icon--sm " id="arrowRight" src="./assets/imgs/arrow-right.svg" alt="arrow-right">
+          </li>
+          <ul id= "secondList" class="list second-list" >
+            <li class="list__item"><a href="">Funciones</a></li>
+            <li class="list__item"><a href="">Canales</a></li>
+            <li class="list__item"><a href="">Integraciones</a></li>
+            <li class="list__item"><a href="">Seguridad</a></li>
+            <li class="list__item"><a href="">Conexiones</a></li>
+            <li class="list__item"><a href="">Clientes</a></li>
+          </ul>
+          <li class="list__item">
+            <a >Soluciones</a>
+          </li>
+          <li class="list__item">
+            <a >Empresa</a>
+          </li>
+          <li class="list__item">
+            <a >Recursos</a>
+          </li>
+          <li class="list__item">
+            <a href="#Planes">Precios</a>
+          </li>
+          <li class="list__item">
+            <a href="#Contacto">Contáctenos</a>
+          </li>
+        </ul>
+        <div class="app__header__nav__cta">
+          <button></button>
+          <button></button>
+        </div>
+      </nav>
+      <nav class="app__header__nav responsive-nav" id="navResponsive">
+        <div class="app__header__nav__images">
+          <img class="logo" src="./assets/imgs/logo.svg" alt="logo">
+          <img class="icon" id="closeMenu" src="./assets/imgs/close.svg" alt="close">
+        </div>
+        <ul class="list list--full">
+          <li class="list__item list__item--click" id="productResponsive">
+            <a href="#">Producto</a>
+            <img class="icon icon--sm " id="arrowRight" src="./assets/imgs/arrow-right.svg" alt="arrow-right">
+          </li>
+          <ul id= "secondListResponsive" class="list second-list" >
+            <li class="list__item"><a href="">Funciones</a></li>
+            <li class="list__item"><a href="">Canales</a></li>
+            <li class="list__item"><a href="">Integraciones</a></li>
+            <li class="list__item"><a href="">Seguridad</a></li>
+            <li class="list__item"><a href="">Conexiones</a></li>
+            <li class="list__item"><a href="">Clientes</a></li>
+          </ul>
+          <li class="list__item">
+            <a href="./src/pages/About.html">Soluciones</a>
+          </li>
+          <li class="list__item">
+            <a href="./src/pages/Contact.html">Empresa</a>
+          </li>
+          <li class="list__item">
+            <a href="./src/pages/Contact.html">Recursos</a>
+          </li>
+          <li class="list__item">
+            <a href="./src/pages/Contact.html">Precios</a>
+          </li>
+          <li class="list__item">
+            <a href="./src/pages/Contact.html">Contáctenos</a>
+          </li>
+        </ul>
+        <div class="app__header__nav__cta">
+          <button></button>
+          <button></button>
+        </div>
+      </nav>
+    <section class="app__header__toggle">
+      <img class="menu" id="openMenu" src="./assets/imgs/menu.svg" alt="toggle-menu">
+    </section>
+  </header>
+  <main class="app__main">
+    <section class="app__main__start">
+      <h1 class="title">
+        DataGraphica: Transforma tus Datos Analógicos en Estadísticas Visuales
+      </h1>
+      <h2 class="subtitle">Impulsa el manejo de tus datos y libera el poder de DataGraphica.</h2>
+      <section class="app__main__cta">
+        <button class="btn btn--cta">Obtener Ahora</button>
+        <button class="btn">Prueba DataGraphica</button>
+      </section>
+    </section>
+    <section class="app__main__presentation" id="#presentation">
+      <article>
+        <h3 class="sub-subtitle">¿Qué es DataGraphica?</h3>
+        <p class="read-more" >DataGraphica es una aplicación intuitiva y poderosa que convierte datos analógicos en información estadística clara y
+        visualmente atractiva. Diseñada para usuarios de todos los niveles de experiencia, esta aplicación es una herramienta
+        indispensable para analizar y comprender datos de manera eficiente y efectiva.
+        <br>
+        DataGraphica permite a los usuarios ingresar datos analógicos de diversas fuentes, como encuestas, mediciones,
+        investigaciones y más. Los datos se pueden ingresar manualmente o importar desde archivos en formato CSV o Excel.
+        <br>
+        La aplicación ofrece una amplia gama de funciones para transformar los datos en información estadística significativa.
+        Los usuarios pueden realizar cálculos básicos, como promedios, sumas y porcentajes, así como aplicar técnicas avanzadas,
+        como regresión lineal y análisis de correlación.
+        <br>
+        DataGraphica ofrece una variedad de opciones visuales para representar los datos de manera comprensible y atractiva. Los usuarios pueden crear gráficos de torta, gráficos de barras, gráficos de líneas, histogramas y diagramas de dispersión, entre otros. La aplicación permite personalizar los gráficos con colores, leyendas, etiquetas y otros detalles.
+        <br>
+        DataGraphica proporciona una serie de herramientas estadísticas para profundizar en los datos y descubrir patrones y tendencias. Los usuarios pueden calcular la desviación estándar, la media, la mediana y otras medidas de dispersión. Además, la aplicación ofrece pruebas de hipótesis y análisis de varianza para evaluar la significancia estadística
+       </p>
+       <button id="readMore">Leer Más</button>
+      </article>
+      <div class="img"></div>
+      <div class="blur"></div>
+    </section>
+    <section class="app__main__testimonials">
+      <div class="app__main__testimolials__testimonial">
+        <div class="photo"></div>
+        <p class="text"></p>
+      </div>
+      <div class="app__main__testimolials__testimonial">
+        <div class="photo"></div>
+        <p class="text"></p>
+      </div>
+      <div class="app__main__testimolials__testimonial">
+        <div class="photo"></div>
+        <p class="text"></p>
+      </div>
+    </section>
+    <h2 id="Planes" class="subtitle">Nuestros Planes para Adaptarse a tus Necesidades: Encuentra la Opción Perfecta para Ti.</h2>
+    <section class="app__main__services">
+      <div class="service">
+        <h3 class="sub-subtitle">Free</h3>
+        <button class="btn btn--big btn--theme">
+          Compra Ahora
+        </button>
+      <ul class="list list--column">
+        <li class="list__item">
+          <img class="icon" src="./assets/imgs/check.svg" alt="check-icon">
+          Acceso gratuito a funciones básicas.
+        </li>
+        <li>
+        <img class="icon" src="./assets/imgs/check.svg" alt="check-icon">
+          Soporte limitado pero disponible.
+        </li>
+        <li>
+        <img class="icon" src="./assets/imgs/check.svg" alt="check-icon">
+          Actualizaciones periódicas.</li>
+        <li>
+        <img class="icon" src="./assets/imgs/check.svg" alt="check-icon">
+          Uso para proyectos individuales.</li>
+        <li>
+          <img class="icon" src="./assets/imgs/check.svg" alt="check-icon">
+          Ocasional publicidad en la interfaz del producto.</li>
+      </ul>
+      </div>
+      <div class="service service--cta">
+        <h3 class="sub-subtitle sub-subtitle--cta">Plus</h3>
+        <button class="btn btn--cta btn--big">
+          Compra Ahora
+        </button>
+        <ul class="list list--column">
+          <li>
+            <img class="icon" src="./assets/imgs/check copy.svg" alt="check-icon">
+            Acceso completo a funciones básicas y mejoradas.
+          </li>
+          <li>
+            <img class="icon" src="./assets/imgs/check copy.svg" alt="check-icon">
+            Soporte prioritario por correo electrónico.
+          </li>
+          <li>
+            <img class="icon" src="./assets/imgs/check copy.svg" alt="check-icon">
+          Límites de uso ampliados.
+          </li>
+          <li>
+            <img class="icon" src="./assets/imgs/check copy.svg" alt="check-icon">
+            Personalización adicional.
+          </li>
+          <li>
+            <img class="icon" src="./assets/imgs/check copy.svg" alt="check-icon">
+          Sin publicidad en la interfaz del producto.
+          </li>
+        </ul>
+      </div>
+      <div class="service">
+        <h3 class="sub-subtitle">Business</h3>
+        <button class="btn btn--big btn--theme">
+          Compra Ahora
+        </button>
+        <ul class="list list--column">
+          <li >
+            <img class="icon" src="./assets/imgs/check.svg" alt="check-icon">
+          Acceso completo a funciones avanzadas.
+          </li>
+          <li>
+            <img class="icon" src="./assets/imgs/check.svg" alt="check-icon">
+            Soporte empresarial y dedicado.
+          </li>
+          <li >
+            <img class="icon" src="./assets/imgs/check.svg" alt="check-icon">
+            Integración con herramientas empresariales.
+          </li>
+          <li >
+            <img class="icon" src="./assets/imgs/check.svg" alt="check-icon">
+            Personalización avanzada.
+          </li>
+          <li>
+            <img class="icon" src="./assets/imgs/check.svg" alt="check-icon">
+            Licencia para múltiples proyectos y equipos.
+          </li>
+        </ul>
+      </div>
+      <div class="service">
+        <h3 class="sub-subtitle">Enterprise</h3>
+        <button class="btn btn--big btn--theme">
+          Compra Ahora
+        </button>
+        <ul class="list list--column">
+          <li>
+            <img class="icon" src="./assets/imgs/check.svg" alt="check-icon">
+            Acceso completo a funciones personalizadas.
+          </li>
+          <li>
+            <img class="icon" src="./assets/imgs/check.svg" alt="check-icon">
+            Soporte personalizado y dedicado.
+          </li>
+          <li>
+            <img class="icon" src="./assets/imgs/check.svg" alt="check-icon">
+            Integración y personalización a medida.
+          </li>
+          <li>
+            <img class="icon" src="./assets/imgs/check.svg" alt="check-icon">
+            Características exclusivas.
+          </li>
+          <li>
+            <img class="icon" src="./assets/imgs/check.svg" alt="check-icon">
+            Licencia extendida para uso comercial a gran escala
+          </li>
+        </ul>
+      </div>
+    </section>
+    <h2 class="subtitle">DataGraphica Incorpora GraphMaker combinado con tecnología GPT</h2>
+    <iframe src="https://www.graphmaker.ai" frameborder="0"></iframe>
+    <h2 id="Contacto" class="subtitle">Encuéntranos: Localiza fácilmente a SDG en nuestro sitio web.</h2>
+    <section class="map-form-wrapper">
+      <div id="map"></div>
+      <section class="app__main__form ">
+        <div class="contact">
+          <h3 class="sub-subtitle">Contacto</h3>
+          <form class="form" id="my-form" action="https://formspree.io/f/myyaapgw" method="POST">
+            <div>
+              <label class="form__label" for="nombre">Nombre:</label>
+              <input class="form__input" type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+              <label class="form__label" for="empresa">Empresa:</label>
+              <input class="form__input" type="text" id="empresa" name="empresa" required>
+              <span></span>
+            </div>
+            <div>
+              <label class="form__label">Email:</label>
+              <input class="form__input" type="email" name="email" required />
+              <span></span>
+            </div>
+            <div>
+              <label class="form__label" for="telefono">Teléfono:</label>
+              <input class="form__input" type="tel" id="telefono" name="telefono" >
+              <span></span>
+            </div>
+            <div class="full">
+              <label class="form__label">Message:</label>
+              <textarea class="form__message" name="mensaje" required></textarea>
+              <span></span>
+            </div>
+            <div class="full">
+              <button class="btn btn--big btn--theme form__submit" id="my-form-button">Submit</button>
+            </div>
+            <p id="my-form-status"></p>
+          </form>
+        </div>
+        <div class="info">
+          <h3 class="sub-subtitle">Contáctanos</h3>
+          <span class="text">We're open for any suggestion or just to have a chat.</span>
+          <ul class="list">
+            <li class="list__item">
+              <div>
+                <img class="icon " src="./assets/imgs/address-60.svg" alt="address-60">
+              </div>
+              <p><span class="info__title">Dirección: San Martín, Mendoza</span></p>
+            </li>
+            <li class="list__item">
+              <div>
+                <img class="icon " src="./assets/imgs/phone-75.svg" alt="phone-75">
+              </div>
+              <p><span class="info__title">Teléfono: + 1235 2355 98</span></p>
+            </li>
+            <li class="list__item">
+              <div>
+                <img class="icon" src="./assets/imgs/paper-plane-16.svg" alt="paper-plane-16">
+              </div>
+              <p><span class="info__title">Email: sdg@gmail.com</span></p>
+            </li>
+            <li class="list__item">
+              <div>
+                <img class="icon" src="./assets/imgs/planet-8.svg" alt="paper-plane-16">
+              </div>
+              <p><span class="info__title">Website: https://sdg.com</span></p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer class="app__footer">
+    <section class="app__footer__cta">
+      <h2 class="subtitle">Descubre todo lo que se puede hacer con DataGraphica</h2>
+      <div class="app__footer__cta__buttons">
+        <button class="btn btn--cta">Obtener Ahora</button>
+        <button class="btn btn--theme">Prueba DataGraphica</button>
+      </div>
+    </section>
+    <section class="app__footer__links">
+      <img class="logo" src="./assets/imgs/logo.svg" alt="logo">
+     <div>
+      <h3 class="sub-subtitle">¿POR QUÉ DataGraphica?</h3>
+      <ul class="list"><a href=""></a><a href=""></a><a href=""></a><a href=""></a></ul>
+     </div>
+     <div>
+      <h3 class="sub-subtitle">HOME</h3>
+      <ul class="list"><a href=""></a><a href=""></a><a href=""></a><a href=""></a></ul>
+     </div>
+     <div>
+      <h3 class="sub-subtitle">PRECIOS</h3>
+      <ul class="list"><a href=""></a><a href=""></a><a href=""></a><a href=""></a></ul>
+     </div>
+     <div>
+      <h3 class="sub-subtitle"></h3>
+      <ul class="list"><a href=""></a><a href=""></a><a href=""></a><a href=""></a></ul>
+     </div>
+     <div>
+      <h3 class="sub-subtitle"></h3>
+      <ul class="list"><a href=""></a><a href=""></a><a href=""></a><a href=""></a></ul>
+     </div>
+    </section>
+  </footer>
+ </div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <script src="./src/js/form.js"></script>
+<script src="./src/js/index.js"></script>
+</body>
+</html>
