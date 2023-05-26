@@ -15,7 +15,7 @@
 /* Aquí definimos las Custom properties */
 
 :root {
-    --negro: #393939;
+    --negro: #ececec;
     /* Tipografía */
     --tipo-principal: Helvetica, Arial, sans-serif;
     --tipo-secundaria: Verdana;
@@ -221,10 +221,6 @@ body {
     color: var(--negro);
     /* opcional */
     line-height: 1.4em;
-    /* opcional */
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
     /* opcional */
     font-smooth: always;
     /* opcional */
